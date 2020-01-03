@@ -1,6 +1,6 @@
 class QuoteGenerator {
     getQuote(){
-        return ["","",""];
+        return ["lalala","hurray","yess we can"];
     }
 }
 
