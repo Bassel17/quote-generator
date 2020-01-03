@@ -1,3 +1,21 @@
+const QuoteSentenceParts = {
+    firstPart:[
+        "Being happy",
+        "Living alone",
+        "Never doing",
+        "Having fun"
+    ],
+    secondPart:[
+        "is something we do",
+        "is what we need",
+        "is when we shouldn't do"
+    ],
+    thirdPart:[
+        "even though we know we shouldn't",
+        "although we think we don't",
+        "just incase its not for us"
+    ]
+}
 
 const generateRandomNumberBetween = (minimumNumber,maximumNumber) => {
     minimumNumber = Math.ceil(minimumNumber);
@@ -7,25 +25,8 @@ const generateRandomNumberBetween = (minimumNumber,maximumNumber) => {
 }
 
 class QuoteGenerator {
-    constructor(){
-        this.quoteSentenceParts = {
-            firstPart:[
-                "Being happy",
-                "Living alone",
-                "Never doing",
-                "Having fun"
-            ],
-            secondPart:[
-                "is something we do",
-                "is what we need",
-                "is when we shouldn't do"
-            ],
-            thirdPart:[
-                "even though we know we shouldn't",
-                "although we think we don't",
-                "just incase its not for us"
-            ]
-        }
+    constructor(quoteSentenceParts){
+        this.quoteSentenceParts = quoteSentenceParts;
     }
 
     getQuote(){
@@ -37,4 +38,4 @@ class QuoteGenerator {
     }
 }
 
-module.exports = new QuoteGenerator();
+module.exports = new QuoteGenerator(QuoteSentenceParts);
