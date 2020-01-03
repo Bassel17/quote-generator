@@ -40,4 +40,8 @@ describe("Quote generator tests", () => {
         expect(quoteSentenceParts.secondPart.includes(quote[1])).toBe(true);
         expect(quoteSentenceParts.ThirdPart.includes(quote[2])).toBe(true);
     });
+
+    it("should return random quote parts", () => {
+        expect(quote).not.toEqual(QuoteGenerator.getQuote());
+    });
 });
