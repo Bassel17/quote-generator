@@ -1,6 +1,6 @@
 class QuoteGenerator {
     getQuote(){
-        return ["lalala","hurray","yess we can"];
+        return ["Being happy","is something we do","even though we know we shouldn't"];
     }
 }
 
