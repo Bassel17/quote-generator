@@ -23,6 +23,8 @@ describe("Quote generator tests", () => {
 
 describe("Quotes generator tests", () => {
 
+    const areAllElementsOfArrayEqual = array => array.every( element => element === array[0] );
+
     it("should return an array of quotes", () => {
         let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(1);
         expect(arrayOfQuotes.length).toBe(1);
@@ -42,5 +44,10 @@ describe("Quotes generator tests", () => {
         for(i=0;i<5;i++){
             expect(arrayOfQuotes[i]).toEqual(jasmine.any(String));
         }
+    });
+
+    it("should return an array of random quotes", () => {
+        let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(5);
+        expect(areAllElementsOfArrayEqual(arrayOfQuotes)).toBe(false);
     });
 });
