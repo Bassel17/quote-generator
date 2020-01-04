@@ -41,10 +41,10 @@ class QuoteGenerator {
         const arrayOfQuotes = [];
         for(let i=0; i<numberOfQuotes ; i++){
             let quote = this.getQuote().join(' ');
-            if(quote !== arrayOfQuotes[i-1]){
-                arrayOfQuotes.push(quote);
-            }else{
+            if(arrayOfQuotes.includes(quote)){
                 i--;
+            }else{
+                arrayOfQuotes.push(quote);
             }
         }
         return arrayOfQuotes;
