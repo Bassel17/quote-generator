@@ -16,8 +16,10 @@ describe("Quote generator tests", () => {
         expect(quote[2]).not.toBe("");
     });
 
-    it("should return random quote parts", () => {
-        expect(quote).not.toEqual(QuoteGenerator.getQuote());
+    it("should return an array of strings", () => {
+        expect(quote[0]).toEqual(jasmine.any(String));
+        expect(quote[1]).toEqual(jasmine.any(String));
+        expect(quote[2]).toEqual(jasmine.any(String));
     });
 });
 
