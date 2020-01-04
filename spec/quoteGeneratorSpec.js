@@ -36,4 +36,11 @@ describe("Quotes generator tests", () => {
             expect(arrayOfQuotes[i]).not.toBe("");
         }
     });
+
+    it("should return an array of strings", () => {
+        let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(5);
+        for(i=0;i<5;i++){
+            expect(arrayOfQuotes[i]).toEqual(jasmine.any(String));
+        }
+    });
 });
