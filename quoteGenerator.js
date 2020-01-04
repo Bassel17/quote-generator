@@ -36,6 +36,11 @@ class QuoteGenerator {
         const quote = [firstPart,secondPart,thirdPart];
         return quote;
     }
+
+    getArrayOfQuotes(numberOfQuotes){
+        const arrayOfQuotes = [""];
+        return arrayOfQuotes;
+    }
 }
 
 module.exports = new QuoteGenerator(QuoteSentenceParts);

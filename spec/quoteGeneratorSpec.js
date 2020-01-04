@@ -20,3 +20,10 @@ describe("Quote generator tests", () => {
         expect(quote).not.toEqual(QuoteGenerator.getQuote());
     });
 });
+
+describe("Quotes generator tests", () => {
+    it("should return an array of 1 quote", () => {
+        let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(1);
+        expect(arrayOfQuotes.length).toBe(1);
+    });
+});
