@@ -38,7 +38,10 @@ class QuoteGenerator {
     }
 
     getArrayOfQuotes(numberOfQuotes){
-        const arrayOfQuotes = [""];
+        const arrayOfQuotes = [];
+        for(let i=0; i<numberOfQuotes ; i++){
+            arrayOfQuotes.push("");
+        }
         return arrayOfQuotes;
     }
 }

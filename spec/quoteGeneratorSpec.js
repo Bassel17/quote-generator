@@ -22,8 +22,10 @@ describe("Quote generator tests", () => {
 });
 
 describe("Quotes generator tests", () => {
-    it("should return an array of 1 quote", () => {
+    it("should return an array of quotes", () => {
         let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(1);
         expect(arrayOfQuotes.length).toBe(1);
+        arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(2);
+        expect(arrayOfQuotes.length).toBe(2);
     });
 });
