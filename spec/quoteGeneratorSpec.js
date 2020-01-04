@@ -22,10 +22,18 @@ describe("Quote generator tests", () => {
 });
 
 describe("Quotes generator tests", () => {
+
     it("should return an array of quotes", () => {
         let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(1);
         expect(arrayOfQuotes.length).toBe(1);
         arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(2);
         expect(arrayOfQuotes.length).toBe(2);
+    });
+
+    it("should return an array of non-empty quotes", () => {
+        let arrayOfQuotes = QuoteGenerator.getArrayOfQuotes(5);
+        for(i=0;i<5;i++){
+            expect(arrayOfQuotes[i]).not.toBe("");
+        }
     });
 });

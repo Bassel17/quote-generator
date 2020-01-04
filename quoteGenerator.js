@@ -40,7 +40,7 @@ class QuoteGenerator {
     getArrayOfQuotes(numberOfQuotes){
         const arrayOfQuotes = [];
         for(let i=0; i<numberOfQuotes ; i++){
-            arrayOfQuotes.push("");
+            arrayOfQuotes.push("something");
         }
         return arrayOfQuotes;
     }
