@@ -11,9 +11,13 @@
         <h1>Quote Generator</h1>
     </header>
     <main class="quote-generator">
-        <h2 class="quote-generator__heading">Press the button below to generate a random quote, enjoy !!</h2>
+        <h2 class="quote-generator__heading">Press the button below to generate a random quote (or quotes), enjoy !!</h2>
         <div class = "quote-generator__random-quote" ></div>
-        <button class = "quote-generator__button">I want a Quote !!</button>
+        <form  class = "quote-generator__form"> 
+            Quantity:
+            <input  class = "quote-generator__quantity" type="number" name="quantity" min="1" max="5" value="1">
+            <input class = "quote-generator__button" type="submit" value="I want a Quote !!">
+        </form>
     </main>
 </body>
 </html>
