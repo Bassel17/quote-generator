@@ -9,7 +9,11 @@ const createHTMLDivElementTo = (parentElement,contentOfElement) => {
 generateQuoteButton.addEventListener("click", (event)=>{
     event.preventDefault();
     const quotes = document.querySelector(".quote-generator__random-quote");
+    quotes.innerHTML = "";
     const quotesNumber = parseInt(document.querySelector(".quote-generator__quantity").value);
     const quotesGenerator = new QuoteGenerator(QuoteSentenceParts);
     const randomQuotes = quotesGenerator.getArrayOfQuotes(quotesNumber);
+    randomQuotes.forEach((quote) => {
+        createHTMLDivElementTo(quotes,quote);
+    });
 });
