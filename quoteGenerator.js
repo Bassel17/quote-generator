@@ -18,7 +18,7 @@ class QuoteGenerator {
         return quote;
     }
 
-    getArrayOfQuotes(numberOfQuotes){
+    getArrayOfQuotes(numberOfQuotes = 1){
         const arrayOfQuotes = [];
         for(let i=0; i<numberOfQuotes ; i++){
             let quote = this.getQuote().join(' ');

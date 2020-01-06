@@ -1,9 +1,9 @@
-const QuoteGenerator = require("../quoteGenerator.js");
-const QuoteSentenceParts = require("../quotePartsDatabase.js");
-const generateQuoteButton = document.getElementsByClassName("quote-generator__button");
+const generateQuoteButton = document.querySelector(".quote-generator__button");
 
-generateQuoteButton.addEventListener("click", ()=>{
-    const quote = document.getElementsByClassName("quote-generator__random-quote");
-    const quoteGenerator = new QuoteGenerator(QuoteSentenceParts);
-    
+generateQuoteButton.addEventListener("click", (event)=>{
+    event.preventDefault();
+    const quotes = document.querySelector(".quote-generator__random-quote");
+    const quotesNumber = parseInt(document.querySelector(".quote-generator__quantity").value);
+    const quotesGenerator = new QuoteGenerator(QuoteSentenceParts);
+    const randomQuotes = quotesGenerator.getArrayOfQuotes(quotesNumber);
 });
