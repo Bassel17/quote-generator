@@ -3,7 +3,7 @@ const generateQuoteButtonWork = document.querySelector(".quote-generator__button
 
 const createHTMLDivElementTo = (parentElement,contentOfElement) => {
     const div = document.createElement('div');
-    div.innerHTML = `" ${contentOfElement} "`;
+    div.innerHTML = contentOfElement;
     parentElement.appendChild(div);
 }
 
@@ -15,6 +15,7 @@ const generateQuotesFrom = (quotesDatabase) => {
         const quotesGenerator = new QuoteGenerator(quotesDatabase);
         const randomQuotes = quotesGenerator.getArrayOfQuotes(quotesNumber);
         randomQuotes.forEach((quote) => {
+            quote = `" ${quote} "`;
             createHTMLDivElementTo(quotes,quote);
         });
     }else{
