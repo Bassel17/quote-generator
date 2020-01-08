@@ -11,9 +11,13 @@ generateQuoteButton.addEventListener("click", (event)=>{
     const quotes = document.querySelector(".quote-generator__random-quote");
     quotes.innerHTML = "";
     const quotesNumber = parseInt(document.querySelector(".quote-generator__quantity").value);
-    const quotesGenerator = new QuoteGenerator(QuoteSentenceParts);
-    const randomQuotes = quotesGenerator.getArrayOfQuotes(quotesNumber);
-    randomQuotes.forEach((quote) => {
-        createHTMLDivElementTo(quotes,quote);
-    });
+    if(quotesNumber >= 1 && quotesNumber <= 5) {
+        const quotesGenerator = new QuoteGenerator(QuoteSentenceParts);
+        const randomQuotes = quotesGenerator.getArrayOfQuotes(quotesNumber);
+        randomQuotes.forEach((quote) => {
+            createHTMLDivElementTo(quotes,quote);
+        });
+    }else{
+        alert("enter a number in the range (1-5)");
+    }
 });
