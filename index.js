@@ -3,7 +3,7 @@ const generateQuoteButtonWork = document.querySelector(".quote-generator__button
 
 const createHTMLDivElementTo = (parentElement,contentOfElement) => {
     const div = document.createElement('div');
-    div.innerHTML = contentOfElement;
+    div.innerHTML = `" ${contentOfElement} "`;
     parentElement.appendChild(div);
 }
 

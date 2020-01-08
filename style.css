@@ -25,4 +25,10 @@ body{
 
 .quote-generator__form{
     margin : 2em;
+    font-weight: bold;
+}
+
+.quote-generator__button{
+    padding: 0 1em;
+    margin:0 1em;
 }
