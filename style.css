@@ -2,3 +2,21 @@
     margin:0;
     padding:0;
 }
+
+.header{
+    text-align: center;
+    padding: 3em;
+}
+
+.quote-generator{
+    text-align: center;
+    margin : 2em;
+}
+
+.quote-generator__random-quote{
+    padding: 3em;
+}
+
+.quote-generator__form{
+    margin : 2em;
+}
