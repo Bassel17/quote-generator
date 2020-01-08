@@ -1,4 +1,4 @@
-const QuoteSentenceParts = {
+const QuoteSentencePartsLife = {
     firstPart:[
         "Being happy",
         "Living alone",
@@ -17,4 +17,22 @@ const QuoteSentenceParts = {
     ]
 }
 
-module.exports = QuoteSentenceParts;
+const QuoteSentencePartsWork = {
+    firstPart:[
+        "When we work",
+        "if we work hard",
+        "while we work"
+    ],
+    secondPart:[
+        "we do something we like",
+        "we achieve success",
+        "we do what we want to do"
+    ],
+    thirdPart:[
+        "and we earn lots of money",
+        "and dont have to worry about anything",
+        "and become successful"
+    ]
+}
+
+module.exports = QuoteSentencePartsLife;

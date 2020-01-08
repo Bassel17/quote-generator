@@ -25,10 +25,10 @@ const generateQuotesFrom = (quotesDatabase) => {
 
 generateQuoteButtonLife.addEventListener("click", (event)=>{
     event.preventDefault();
-    generateQuotesFrom(QuoteSentenceParts)
+    generateQuotesFrom(QuoteSentencePartsLife);
 });
 
 generateQuoteButtonWork.addEventListener("click", (event)=>{
     event.preventDefault();
-    generateQuotesFrom(QuoteSentenceParts)
+    generateQuotesFrom(QuoteSentencePartsWork);
 });
