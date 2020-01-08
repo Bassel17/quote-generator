@@ -3,6 +3,10 @@
     padding:0;
 }
 
+body{
+    background-color: rgb(255,165,0);
+}
+
 .header{
     text-align: center;
     padding: 3em;
@@ -14,7 +18,9 @@
 }
 
 .quote-generator__random-quote{
-    padding: 3em;
+    padding: 2em;
+    color:white;
+    font-size: 2em;
 }
 
 .quote-generator__form{
