@@ -25,6 +25,10 @@ body{
     font-size: 2em;
 }
 
+.quote-generator__random-quote div{
+  margin: 1em;
+}
+
 .quote-generator__form{
     margin : 2em;
     font-weight: bold;
