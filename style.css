@@ -35,6 +35,9 @@ body{
 }
 
 .quote-generator__button{
-    padding: 0 1em;
-    margin:0 1em;
+    padding: 10px 24px;
+    margin:0 10px;
+    background-color: #555555;
+    border:none;
+    color: white;
 }
